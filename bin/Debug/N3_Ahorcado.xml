@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>N3_Ahorcado</name>
+    </assembly>
+    <members>
+        <member name="T:N3_Ahorcado.GUI.ControlAhorcado">
+            <summary>
+            Clase que representa el control visual ControlAhorcado.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlAhorcado.m_principal">
+            <summary>
+            Referencia al formulario principal del juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlAhorcado.#ctor(N3_Ahorcado.GUI.Principal)">
+            <summary>
+            Inicializa una nueva instancia de la clase ControlAhorcado.
+            </summary>
+            <param name="principal">Referencia al formulario principal.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlAhorcado.Actualizar">
+            <summary>
+            Actualiza el estado del juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlAhorcado.EtiquetarMensaje(System.String)">
+            <summary>
+            Etiqueta mensaje de la letra jugada por el jugador.
+            </summary>
+            <param name="mensaje">Mensaje de la etiqueta.</param>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlAhorcado.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlAhorcado.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlAhorcado.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlOperaciones.m_principal">
+            <summary>
+            Referencia al formulario principal del juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlOperaciones.#ctor(N3_Ahorcado.GUI.Principal)">
+            <summary>
+            Inicializa una nueva instancia de la clase ControlOperaciones.
+            </summary>
+            <param name="principal">Referencia al formulario principal.</param>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlOperaciones.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlOperaciones.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlOperaciones.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.Principal.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.Principal.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.Principal.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N3_Ahorcado.GUI.ControlLetras">
+            <summary>
+            Clase que representa el control visual ControlLetras.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlLetras.m_principal">
+            <summary>
+            Referencia al formulario principal del juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlLetras.#ctor(N3_Ahorcado.GUI.Principal)">
+            <summary>
+            Inicializa una nueva instancia de la clase ControlLetras.
+            </summary>
+            <param name="principal">Referencia al formulario principal.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlLetras.CargarLetras">
+            <summary>
+            Carga las letras (A-Z) del juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlLetras.ButtonClickHandler(System.Object,System.EventArgs)">
+            <summary>
+            Responde al clic de uno de los botones de las letras.
+            </summary>
+            <param name="sender">Objeto generador del evento.</param>
+            <param name="e">Argumentos del evento.</param>
+        </member>
+        <member name="F:N3_Ahorcado.GUI.ControlLetras.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlLetras.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N3_Ahorcado.GUI.ControlLetras.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N3_Ahorcado.Modelo.EstadoJuego">
+            <summary>
+            Especifica el estado del juego.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.EstadoJuego.Ahorcado">
+            <summary>
+            El jugador ha perdido.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.EstadoJuego.Ganador">
+            <summary>
+            El jugador ha ganado.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.EstadoJuego.Jugando">
+            <summary>
+            El juego está ejecución.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.EstadoJuego.NoIniciado">
+            <summary>
+            El juego no se ha iniciado.
+            </summary>
+        </member>
+        <member name="T:N3_Ahorcado.Modelo.JuegoAhorcado">
+            <summary>
+            Clase que representa la entidad JuegoAhorcado.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcado.m_diccionario">
+            <summary>
+            Diccionario de palabras.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcado.m_actual">
+            <summary>
+            Palabra actual en juego.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcado.m_jugadas">
+            <summary>
+            Letras jugadas.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcado.m_intentosDisponibles">
+            <summary>
+            Intentos disponibles en el juego.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcado.m_estado">
+            <summary>
+            Estado del juego.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.JuegoAhorcado.Estado">
+            <summary>
+            Obtiene el estado del juego.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.JuegoAhorcado.IntentosDisponibles">
+            <summary>
+            Obtiene los intentos disponibles en el juego.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.JuegoAhorcado.Jugadas">
+            <summary>
+            Obtiene las letras jugadas hasta el momento.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.JuegoAhorcado.Ocurrencias">
+            <summary>
+            Obtiene las ocurrencias de letras.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.JuegoAhorcado.PalabraActual">
+            <summary>
+            Obtiene la palabra actual en juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.#ctor">
+            <summary>
+            Inicializa una instancia de la clase JuegoAhorcado.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.GenerarValor">
+            <summary>
+            Genera un valor aleatorio para la selección de la palabra.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.IniciarJuego">
+            <summary>
+            Inicia un nuevo juego.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.JugarLetra(N3_Ahorcado.Modelo.Letra)">
+            <summary>
+            Juega una letra específica.
+            </summary>
+            <param name="letra">Letra a jugar.</param>
+            <returns><em>true</em> si la letra pertenece a la palbra; <em>false</em> en caso contrario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.LetraUtilizada(N3_Ahorcado.Modelo.Letra)">
+            <summary>
+            Determina si la letra fue utilizada en una partida del ahorcado.
+            </summary>
+            <param name="letra">Letra a determinar si ha sido jugada.</param>
+            <returns><i>true</i> si la letra fue jugada; <i>false</i> en caso contrario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.ObtenerPalabra(System.Int32)">
+            <summary>
+            Obtiene una palabra del diccionario.
+            </summary>
+            <param name="posicion">Posición de la palabra en el diccionario.</param>
+            <returns>Palabra del diccionario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.PuntoExtension1">
+            <summary>
+            Punto de extensión no. 1.
+            </summary>
+            <returns>Cadena de respuesta del punto de extensión.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.JuegoAhorcado.PuntoExtension2">
+            <summary>
+            Punto de extensión no. 2.
+            </summary>
+            <returns>Cadena de respuesta del punto de extensión.</returns>
+        </member>
+        <member name="T:N3_Ahorcado.Modelo.JuegoAhorcadoConstantes">
+            <summary>
+            Especifica diferentes valores del juego (máximo número de intentos, y total palabras).
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcadoConstantes.MaximoIntentos">
+            <summary>
+            Número máximo de intentos en el juego.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.JuegoAhorcadoConstantes.TotalPalabras">
+            <summary>
+            Total de palabras en el juego.
+            </summary>
+        </member>
+        <member name="T:N3_Ahorcado.Modelo.Letra">
+            <summary>
+            Representa una letra de una palabra.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.Letra.m_letra">
+            <summary>
+            Carácter que representa la letra.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.Letra.Caracter">
+            <summary>
+            Establece y obtiene el carácter que representa la letra.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Letra.#ctor(System.Char)">
+            <summary>
+            Inicializa una nueva instancia de la clase Letra con un carácter específico.
+            </summary>
+            <param name="letra">Carácter de la letra.</param>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Letra.EsIgual(N3_Ahorcado.Modelo.Letra)">
+            <summary>
+            Determina si una letra es igual a otra.
+            </summary>
+            <param name="letra">Letra a comparar.</param>
+            <returns><em>true</em> si las letras son iguales; <em>false</em> en caso contrario.</returns>
+        </member>
+        <member name="T:N3_Ahorcado.Modelo.Palabra">
+            <summary>
+            Clase que representa la entidad Palabra.
+            </summary>
+        </member>
+        <member name="F:N3_Ahorcado.Modelo.Palabra.m_letras">
+            <summary>
+            Conjunto de letras de la palabra.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Modelo.Palabra.Letras">
+            <summary>
+            Obtiene el conjunto de letras de la palabra.
+            </summary>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Palabra.#ctor(System.String)">
+            <summary>
+            Inicializa una nueva instancia de la clase Palabra con la cadena de caracteres que representa la palabra.
+            </summary>
+            <param name="palabra">Cadena de caracteres que representa la palabra.</param>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Palabra.BuscarLetraEnVector(N3_Ahorcado.Modelo.Letra,System.Collections.ArrayList)">
+            <summary>
+            Bucar una letra en un vector de letras.
+            </summary>
+            <param name="letra">Letra a buscar.</param>
+            <param name="vectorLetras">Vector con las letras.</param>
+            <returns><i>true</i> si la letra fue encontrada; <i>false</i> en caso contrario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Palabra.GenerarOcurrencias(System.Collections.ArrayList)">
+            <summary>
+            Genera el conjunto de ocurrencias de un conjunto de letras. Las letras no despejadas se son representadas por el carácter _.
+            </summary>
+            <param name="jugadas">Conjunto de letras jugadas.</param>
+            <returns>Conjunto de ocurrencias de las letras jugadas.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Palabra.EstaCompleta(System.Collections.ArrayList)">
+            <summary>
+            Determina si la palabra ya fue completada respecto a las letras jugadas.
+            </summary>
+            <param name="jugadas">Conjunto de letras jugadas.</param>
+            <returns><i>true</i> si palabra ya fue completada; <em>false</em> en caso contrario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Modelo.Palabra.EstaLetra(N3_Ahorcado.Modelo.Letra)">
+            <summary>
+            Determina si una letra está en el conjunto de letras de la palabra.
+            </summary>
+            <param name="letra">Letra a buscar.</param>
+            <returns><em>true</em> si la letra está en el conjunto de letras; <em>false</em> en caso contrario.</returns>
+        </member>
+        <member name="M:N3_Ahorcado.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:N3_Ahorcado.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.ahorcado_icon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan0">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan4">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan5">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:N3_Ahorcado.Properties.Resources.quedan6">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
